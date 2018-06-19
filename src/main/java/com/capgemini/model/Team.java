@@ -10,6 +10,11 @@ public abstract class Team {
     public int getScore() {
         return score;
     }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
     public Team(String name){
         this.name = name;
     }
@@ -20,7 +25,7 @@ public abstract class Team {
 
     public int play(){
         Random random = new Random();
-        score += random.nextInt(5);
+        score = random.nextInt(6);
         return score;
     }
 
